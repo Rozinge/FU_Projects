@@ -1,1 +1,1 @@
-# [Контрольная работа]https://nbviewer.org/github/Rozinge/FU_Projects/blob/main/Сем2_Практикум/Buzin_ZBPI211.ipynb)
+# [Контрольная работа](https://nbviewer.org/github/Rozinge/FU_Projects/blob/main/Сем2_Практикум/Buzin_ZBPI211.ipynb)
