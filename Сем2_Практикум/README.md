@@ -1,0 +1,1 @@
+# [Контрольная работа](https://nbviewer.org/github/Rozinge/FU_projects/blob/main/Buzin_ZBPI211.ipynb)
