@@ -55,20 +55,17 @@ def bin_search(li, element):
 
 # 5
 def is_palindrome(string):
-    if type(string) == str:
-        cnt = 0
-        string =  "".join(i for i in string.lower() if i.isalpha())
-        for i in range(len(string)//2):
-            if string[i] == string[len(string) - i - 1]:
-                cnt+=1
-            else:
-                return print('NO')
-        if cnt == len(string)//2:
-            return print('YES')
+    cnt = 0
+    string =  "".join(i for i in string.lower() if i.isalpha())
+    for i in range(len(string)//2):
+        if string[i] == string[len(string) - i - 1]:
+            cnt+=1
         else:
             return print('NO')
+    if cnt == len(string)//2:
+        return print('YES')
     else:
-        return print('Введите строку')
+        return print('NO')
 
 
 # 6
@@ -131,7 +128,7 @@ periodic_table = json.load(open('periodic_table.json'))
 def decode_ch(string_of_elements): 
     if type(string_of_elements) == str and len(string_of_elements) == len("".join(i for i in string_of_elements if i.isalpha())):
         ll = []
-        for i in string_of_elements:
+        for i in ''.join(' ' + x if x.isupper() else x for x in string_of_elements).strip(' ').split(' '):
             for j, k in periodic_table.items():
                 if i == j:
                     ll.append(k)
