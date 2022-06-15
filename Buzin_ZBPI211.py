@@ -61,11 +61,11 @@ def is_palindrome(string):
         if string[i] == string[len(string) - i - 1]:
             cnt+=1
         else:
-            return print('NO')
+            break
     if cnt == len(string)//2:
-        return print('YES')
+        print('YES')
     else:
-        return print('NO')
+        print('NO')
 
 
 # 6
