@@ -63,9 +63,9 @@ def is_palindrome(string):
         else:
             break
     if cnt == len(string)//2:
-        print('YES')
+        return 'YES'
     else:
-        print('NO')
+        return 'NO'
 
 
 # 6
